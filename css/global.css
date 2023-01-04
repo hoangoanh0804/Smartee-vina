@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #6996c1;
+    --seconday-color: #6e6f72;
+    --btn-color: #e46161;
+    --bg-color: #fbfcfd;
+    --white: #fff;
+    --bg-gray: #f0f0f0;
+    --bg-blue: #211e3b;
+}
+
+/* @media (min-width: 1400px){
+    .container{
+        max-width: 1240px;
+    }
+} */

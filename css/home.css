@@ -1,0 +1,218 @@
+/* ****************************************** */
+/* ****************SLIDE**************** */
+/* ****************************************** */
+
+.slide {
+    margin-top: 104px;
+}
+
+.slide .item {
+    position: relative;
+}
+
+.slide .content {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 2;
+    width: 35%;
+}
+
+.slide .content h3 {
+    font-size: 38px;
+}
+
+.slide .slick-active .content h3 {
+    animation: fadeInDown 1s;
+}
+
+.slide .content h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.slide .slick-active .content {
+    animation: fadeInDown 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.slide .content p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.slide .content a {
+    padding: 15px;
+    background-color: var(--btn-color);
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slide .content a:hover {
+    background-color: var(--primary-color);
+}
+
+/* ****************************************** */
+/* ****************CLIENTS**************** */
+/* ****************************************** */
+
+.clients {
+    margin: 50px 0;
+}
+
+.clients li {
+    border: 1px solid #eee;
+    margin: 15px 10px !important;
+    padding: 20px !important;
+    box-shadow: rgb(100 100 111 / 20%) 0 0px 12px 0;
+    border-radius: 5px;
+}
+
+.clients .item {
+    margin-bottom: 50px;
+}
+
+.clients .item a {
+    display: block;
+}
+
+.clients .slick-dots {
+    bottom: -30px;
+}
+
+.clients .slick-dots li button {
+    width: 25px;
+    height: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.clients .slick-dots li.slick-active button {
+    background-color: #6996c1;
+    width: 40px;
+}
+
+/* ****************************************** */
+/* ****************SCROLL LIBARARY CSS**************** */
+/* ****************************************** */
+
+.simply-scroll-container {
+    position: relative;
+}
+
+.simply-scroll-clip {
+    position: relative;
+    overflow: hidden;
+}
+
+.simply-scroll-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.simply-scroll-list li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.simply-scroll-list li img {
+    border: none;
+    display: block;
+}
+
+.simply-scroll {
+    width: 100%;
+}
+
+.simply-scroll .simply-scroll-clip {
+    width: 100%;
+}
+
+.simply-scroll .simply-scroll-list li {
+    float: left;
+    width: 290px;
+}
+
+#scroller2 {
+    margin-left: -200px;
+    margin-top: -5px;
+}
+
+/* ****************************************** */
+/* ****************RESPONSIVE**************** */
+/* ****************************************** */
+
+@media (max-width: 1400px) {
+    .slide .content h2 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1200px) {
+    .slide {
+        margin-top: 77px;
+    }
+}
+@media (max-width: 991px) {
+    .slide {
+        margin-top: 55px;
+    }
+    .slide .content {
+        width: 80%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .slide .content h2 {
+        font-size: 35px;
+    }
+    .slide .content h3 {
+        font-size: 30px;
+    }
+    .slide .content p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .slide .content h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .slide .content p {
+        display: none;
+    }
+    .slide .content a {
+        padding: 12px;
+        font-size: 13px;
+    }
+    .clients {
+        margin: 20px 0;
+    }
+    .simply-scroll .simply-scroll-list li {
+        width: 150px;
+    }
+}
+@media (max-width: 575px) {
+    .slide .content {
+        display: none;
+    }
+}

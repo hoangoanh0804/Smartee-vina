@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ICONS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Thư viện slick: https://kenwheeler.github.io/slick/ -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+
+        <link rel="stylesheet" href="css/about.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!----------------------------------------------------------->
+
+        <!-- Thư viện mouse cursor effect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-core.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+        <link href="js/vendor/serialcursor/serialcursor.css" rel="stylesheet" type="text/css" />
+        <script src="js/vendor/serialcursor/serialcursor.js"></script>
+        <!----------------------------------------------------------->
+
+        <!--Thư viện wow: https://wowjs.uk/docs-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!--Thư viện animation: https://animate.style/-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- SIMPLE SCROLL JS -->
+        <script src="js/vendor/simplescroll.js"></script>
+        <!-- GLOBAL CSS JS -->
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/style.js"></script>
+
+        <!-- LOCAL CSS JS -->
+        <link rel="stylesheet" href="css/home.css" />
+        <script src="js/home.js"></script>
+
+        <title>Smartee Vina</title>
+    </head>
+    <body>
+        <!-- BEGIN HEADER -->
+        <div class="headerfix">
+            <div class="container">
+                <div class="header">
+                    <a href="" class="logo"><img src="img/logo.png" alt="" /></a>
+                    <div class="menu">
+                        <ul>
+                            <li class="clickScroll" dataid="#about">About</li>
+                            <li class="clickScroll" dataid="#service">Service</li>
+                            <li class="clickScroll" dataid="#project">Projects</li>
+                            <li class="clickScroll" dataid="#team">Team</li>
+                            <li class="clickScroll" dataid="#career">Careers</li>
+                            <li class="clickScroll" dataid="#contact">Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <p>Have any questions?</p>
+                            <p>+84.946.291.799</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END HEADER -->
+
+        <!-- SLIDE - HEADER -->
+        <div class="slide">
+            <div class="item">
+                <img src="img/slide-1.png" alt="" />
+                <div class="content">
+                    <h3>The best way to</h3>
+                    <h2>ORGANIZIZE YOUR BUSINESS</h2>
+                    <p>We create the best quality homepage, mobile web, application, software and hardware, and NFT market you want.</p>
+                    <a class="clickScroll" dataid="#contact" href="javascript:;">Contact Us</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/slide-1.png" alt="" />
+                <div class="content">
+                    <h3>The best way to</h3>
+                    <h2>ORGANIZIZE YOUR BUSINESS 2</h2>
+                    <p>We create the best quality homepage, mobile web, application, software and hardware, and NFT market you want.</p>
+                    <a class="clickScroll" dataid="#contact" href="javascript:;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPANY-->
+        <div class="company">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                            <h3>Our Mission</h3>
+                            <p>We make a better world with technology and people.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-users"></i></div>
+                            <h3>Our Vision</h3>
+                            <p>Global company that creates life, pleasure, and convenience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-user-gear"></i></div>
+                            <h3>Our Principles</h3>
+                            <p>Global company that creates life, pleasure, and convenience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="thumb">
+                            <img src="img/about/about-1.png" alt="" />
+                            <img src="img/about/about-2.png" alt="" />
+                            <img src="img/about/about-3.png" alt="" />
+
+                            <div class="year">Since 2011</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h3>Failure is The Condiment That Gives <span>Success</span></h3>
+                        <p>
+                            Smartee vina bring the right people to challenge establisshed thinking and drive tranformation. In the world of the coming
+                            future, Smarte vina will be grafted more and more, IT changes will lead the evolution of human life.
+                        </p>
+                        <p>We have core technology that can respond to the future-oriented environment and needs of various customer.</p>
+                        <ul>
+                            <li>
+                                <!-- <div class="icon"></div> -->
+                                <i class="fa-solid fa-check"></i>
+                                Powerful mobile & online App.
+                            </li>
+                            <li>
+                                <!-- <div class="icon"></div> -->
+                                <i class="fa-solid fa-check"></i>
+                                Clean & professional code.
+                            </li>
+                            <li>
+                                <!-- <div class="icon"></div> -->
+                                <i class="fa-solid fa-check"></i>
+                                Fully responsive layout.
+                            </li>
+                            <li>
+                                <!-- <div class="icon"></div> -->
+                                <i class="fa-solid fa-check"></i>
+                                Speed performance.
+                            </li>
+                            <li>
+                                <!-- <div class="icon"></div> -->
+                                <i class="fa-solid fa-check"></i>
+                                Smooth transition effects.
+                            </li>
+                            <li>
+                                <!-- <div class="icon"></div> -->
+                                <i class="fa-solid fa-check"></i>
+                                Easy to customization.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE -->
+        <div id="service" class="service">
+            <div class="container">
+                <div class="top">
+                    <div class="left wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h5>We Are Offering All Kinds of IT</h5>
+                        <h2>Services</h2>
+                    </div>
+                    <div class="right wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <p>
+                            The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep
+                            industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs
+                            and behavior of their users.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <a href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h3>Software Development</h3>
+                            <p>
+                                A development team that specializes in developing various platform businesses will successfully complete your project.
+                            </p>
+                            <!-- <div class="button-icon-1"><i class="fa-solid fa-arrow-right"></i></div> -->
+                        </a>
+                    </div>
+                    <div class="col-md-4 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href="" class="card-1">
+                            <div class="icon"><i class="fa-brands fa-windows"></i></div>
+                            <h3>Web Development</h3>
+                            <p>
+                                A development team that specializes in developing various platform businesses will successfully complete your project.
+                            </p>
+                            <!-- <div class="button-icon-1"><i class="fa-solid fa-arrow-right"></i></div> -->
+                        </a>
+                    </div>
+                    <div class="col-md-4 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <a href="" class="card-1">
+                            <div class="icon"><i class="fa-regular fa-file-code"></i></div>
+                            <h3>Analytic Solutons</h3>
+                            <p>
+                                A development team that specializes in developing various platform businesses will successfully complete your project.
+                            </p>
+                            <!-- <div class="button-icon-1"><i class="fa-solid fa-arrow-right"></i></div> -->
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <a href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-palette"></i></div>
+                            <h3>Product & Design</h3>
+                            <p>
+                                A development team that specializes in developing various platform businesses will successfully complete your project.
+                            </p>
+                            <!-- <div class="button-icon-1"><i class="fa-solid fa-arrow-right"></i></div> -->
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <a href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                            <h3>Clould & Devops</h3>
+                            <p>
+                                A development team that specializes in developing various platform businesses will successfully complete your project.
+                            </p>
+                            <!-- <div class="button-icon-1"><i class="fa-solid fa-arrow-right"></i></div> -->
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <a href="" class="card-1">
+                            <div class="icon"><i class="fa-solid fa-database"></i></div>
+                            <h3>Data Center</h3>
+                            <p>
+                                A development team that specializes in developing various platform businesses will successfully complete your project.
+                            </p>
+                            <!-- <div class="button-icon-1"><i class="fa-solid fa-arrow-right"></i></div> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECHNOLOGY -->
+        <div class="technology">
+            <div class="container">
+                <div class="row up">
+                    <div class="col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h5>TECHNOLOGY INDEX</h5>
+                        <h3>We Work With Modern <span>TECHNOLOGY</span></h3>
+                        <p>Our team can assist you in transforming your business through latest tech capabilities to stay ahead of.</p>
+                        <div class="button">
+                            <button dataid="#mobile" class="active">Mobile</button>
+                            <button dataid="#frontend">Frontend</button>
+                            <button dataid="#backend">Backend</button>
+                            <button dataid="#database">Database</button>
+                            <button dataid="#infra">Infra / Devops</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div id="mobile" class="card-technology active">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <p>IOS</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-android"></i>
+                                        <p>Android</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-react"></i>
+                                        <p>React JS</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-js"></i>
+                                        <p>Javascript</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <p>IOS</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-android"></i>
+                                        <p>Android</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="frontend" class="card-technology">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <p>IOS</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-android"></i>
+                                        <p>Android</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-react"></i>
+                                        <p>React JS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="backend" class="card-technology">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <p>IOS</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-android"></i>
+                                        <p>Android</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="database" class="card-technology">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-android"></i>
+                                        <p>Android</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <p>IOS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="infra" class="card-technology">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <p>IOS</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card">
+                                        <i class="fa-brands fa-android"></i>
+                                        <p>Android</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div id="project" class="project2">
+            <div class="container">
+                <div class="projects-top wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <h3>How We Work For <span>Our Customers</span></h3>
+                    <p>We are committed to providing our customers with exceptional servicewhile offering our employees the best training.</p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="active wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <a href="#content1"
+                                ><i class="fa-solid fa-lightbulb"></i>
+                                <h3>Collect Idea</h3></a
+                            >
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.7s">
+                            <a href="#content2"
+                                ><i class="fa-solid fa-chart-simple"></i>
+                                <h3>Research Project</h3></a
+                            >
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <a href="#content3"
+                                ><i class="fa-solid fa-gears"></i>
+                                <h3>Start Optimize</h3></a
+                            >
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s">
+                            <a href="#content4"
+                                ><i class="fa-solid fa-flag"></i>
+                                <h3>Launch Product</h3></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div id="content1" class="box active wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1.3s">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="img/product/product-2.jpeg" alt="" />
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Collect idea</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <!-- <a href="">READ MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content2" class="box">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="img/product/product-2.jpeg" alt="" />
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Research Project</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <!-- <a href="">READ MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content3" class="box">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="img/product/product-3.jpeg" alt="" />
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Start Optimize</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <!-- <a href="">READ MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content4" class="box">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="img/product/product-4.jpeg" alt="" />
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Launch Product</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, maxime officia sed quidem incidunt
+                                    temporibus similique vero numquam eaque veritatis debitis asperiores quisquam voluptatem necessitatibus hic
+                                    accusamus blanditiis officiis?
+                                </p>
+                                <!-- <a href="">READ MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM MEMBER  -->
+        <div id="team" class="team-member">
+            <div class="container">
+                <div class="team-desc">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Our Team</h5>
+                            <h3>We are creative a <span>Smartee Team</span></h3>
+                        </div>
+                        <div class="col-lg-8">
+                            <p>
+                                We grown the division into a team that cover everything. The development of reliable and scalable software solutions
+                                for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver
+                                custom solutions and products that perfectly fit the needs and behavior of their users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-img">
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-1.png" alt="" /></div>
+                            <h3>David Nguyen</h3>
+                            <h6>Global Development Leader</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-2.png" alt="" /></div>
+                            <h3>Minh Khai</h3>
+                            <h6>Senior Fullstack Developer</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-3.png" alt="" /></div>
+                            <h3>Hoang Oanh</h3>
+                            <h6>Frontend Developer</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-4.png" alt="" /></div>
+                            <h3>Minh Hong</h3>
+                            <h6>Flutter Developer</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-5.png" alt="" /></div>
+                            <h3>Thanh Phong</h3>
+                            <h6>Java Developer</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-6.png" alt="" /></div>
+                            <h3>Trung Tin</h3>
+                            <h6>Senior Salesforce Developer</h6>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-7.png" alt="" /></div>
+                            <h3>Khanh Chau</h3>
+                            <h6>Senior Fullstack Developer</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-8.png" alt="" /></div>
+                            <h3>Trong Nguyen</h3>
+                            <h6>Flutter Developer</h6>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-9.png" alt="" /></div>
+                            <h3>Hoang Giang</h3>
+                            <h6>Senior Java Developer</h6>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-10.png" alt="" /></div>
+                            <h3>Thanh Tam</h3>
+                            <h6>Senior Flutter Developer</h6>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-11.png" alt="" /></div>
+                            <h3>Yen Tran</h3>
+                            <h6>Admin & HR</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-member">
+                            <div class="thumb"><img src="./img/team/team-12.png" alt="" /></div>
+                            <h3>Thanh Ha</h3>
+                            <h6>Bussiness Analyst</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SMARTEE - CHOOSE US-->
+
+        <div class="choose-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-right" src="./img/bg/bg-10.png" alt="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Why you Should Choose <span>Smartee Vina?</span></h3>
+                        <p>
+                            Engitech is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help
+                            businesses elevate their value through custom software development, product design, QA and consultancy services.
+                        </p>
+                        <div class="chooseus-desc">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="./img/icon/icon-1.svg" alt="" />
+                                    <h6>Experience</h6>
+                                    <p>Our great team of more than 1400 software experts.</p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="./img/icon/icon-2.svg" alt="" />
+                                    <h6>Active Clients</h6>
+                                    <p>We’ll help you test bold new ideas while sharing your.</p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="./img/icon/icon-3.svg" alt="" />
+                                    <h6>Project done</h6>
+                                    <p>Our great team of more than 1400 software experts.</p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="./img/icon/icon-4.svg" alt="" />
+                                    <h6>Team avisors</h6>
+                                    <p>We’ll help you test bold new ideas while sharing your.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARTNERSHIPS -->
+        <div class="partnerships">
+            <div class="partnerships-bottom wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
+                <div class="container">
+                    <h5>Trusted by leading organizations with complex problems</h5>
+                    <p>Smart idea & solutions to grow your bussiness.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clients wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+            <!-- <div class="container"> -->
+            <ul class="scroller">
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+                <li><img src="./img/client/clients-5.png" /></li>
+            </ul>
+            <ul class="scroller" id="scroller2">
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+                <li><img src="./img/client/clients-2.png" /></li>
+            </ul>
+            <!-- </div> -->
+        </div>
+
+        <!-- Careers -->
+        <div id="career" class="careers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img src="./img/team/AnhKhaisuytu.png" alt="" />
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="content">
+                            <h6>Come with <span>Smartee Vina</span></h6>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-connectdevelop"></i>
+                                    Logical
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                    Creativity
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-user-clock"></i>
+                                    Professional
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                                    Growth
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    Focus & Drive
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-people-roof"></i>
+                                    Work hard & play harder
+                                </li>
+                            </ul>
+
+                            <p>Develop Yourself, Develop Your Confidence, Develop Your Dream</p>
+
+                            <a
+                                href="https://itviec.com/nha-tuyen-dung/smartee-vina"
+                                class="contact-us wow animate__animated animate__fadeIn"
+                                data-wow-duration="1s"
+                                data-wow-delay="0.4s"
+                                >Apply Now</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us - informations-->
+
+        <div id="contact" class="contactus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Contact us now</h6>
+                        <h3>Creative IT solutions to grow your business.</h3>
+
+                        <form action="">
+                            <input class="form-input" type="text" placeholder="Full name" />
+                            <input class="form-input" type="email" placeholder="Email address" />
+                            <input class="form-input" type="text" placeholder="Subjects" />
+                            <textarea class="form-input" rows="9" placeholder="Messenge"></textarea>
+                            <button type="submit">Get Free Consultation</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h6>Get In Touch</h6>
+                        <h3>We are always ready to help you.</h3>
+                        <ul class="contactus-infor">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>7F MH Building, 728 Vo Van Kiet, Ward 1, District 5, HCM City.</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>+84.946.291.799</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>info@smarteevina.com</p>
+                            </li>
+                        </ul>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7635986532614!2d106.67901427553365!3d10.7526940893946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fa5cfec5945%3A0xd161a90aea9620c0!2sMH-building!5e0!3m2!1sen!2s!4v1672199844781!5m2!1sen!2s"
+                            width="100%"
+                            height="440"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <img class="logo" src="./img/logo.png" alt="" />
+                            <p class="desc-1">
+                                Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis
+                            </p>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-title">IT Service</h4>
+                            <ul class="footer-service">
+                                <li>
+                                    <a href="">Software Development</a>
+                                </li>
+                                <li>
+                                    <a href="">Software Development</a>
+                                </li>
+                                <li>
+                                    <a href="">Analytic Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="">Software Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-title">Contact info</h4>
+                            <ul class="footer-infor">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>7F MH Building, 728 Vo Van Kiet, Ward 1, District 5, HCM City.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <p>+84.946.291.799</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>info@smarteevina.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-title">Newsletter</h4>
+                            <p class="desc-2">We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
+                            <form action="" class="footer-form">
+                                <input type="text" placeholder="Your email address" />
+                                <button><i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>Copyright@ 2022 <span>Smarteevina</span>. Allright reserved.</p>
+                    <a>Design & developed by duongngochoangoanh.</a>
+                </div>
+            </div>
+            <a href="javascript:;" class="ft-backtop"><i class="fa fa-angle-up"></i></a>
+            <a href="tel:0909123456" class="c-button-3">
+                <i class="fa-solid fa-phone-volume"></i>
+            </a>
+        </div>
+    </body>
+</html>

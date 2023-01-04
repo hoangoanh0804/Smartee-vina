@@ -1,0 +1,68 @@
+/* JavaScript: serialcursor */
+#serialcursor {
+    pointer-events: none;
+}
+#serialcursor-inner {
+    position: fixed;
+    z-index: 13;
+    width: 40px !important;
+    height: 40px !important;
+    margin: -20px 0 0 -21px;
+    border: 1px solid var(--primary-color);
+    opacity: 0.2;
+    transition: opacity 900ms;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#serialcursor-pointer {
+    position: fixed;
+    z-index: 13;
+    height: 8px;
+    width: 8px;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    transition: 200ms;
+}
+#serialcursor.on-mousemove #serialcursor-inner {
+    opacity: 0.6;
+}
+#serialcursor.is-click #serialcursor-inner {
+    opacity: 1;
+}
+#serialcursor.is-click #serialcursor-pointer {
+    transform: translate(-50%, -50%) scale(0.75);
+}
+#serialcursor-pointer-grab {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+#serialcursor-pointer-grab .sub-icon {
+    position: absolute;
+    top: -2px;
+    width: 6px;
+    height: 14px;
+    fill: #bc2d39;
+    transition: 400ms;
+}
+#serialcursor-pointer-grab .sub-icon.is-left {
+    left: -5px;
+}
+#serialcursor-pointer-grab .sub-icon.is-right {
+    right: -5px;
+}
+#serialcursor.is-grab #serialcursor-pointer-grab {
+    opacity: 1;
+}
+#serialcursor.is-grab #serialcursor-pointer-grab .sub-icon {
+    fill: #fff;
+}
+#serialcursor.is-grab #serialcursor-pointer-grab .sub-icon.is-left {
+    left: -16px;
+}
+#serialcursor.is-grab #serialcursor-pointer-grab .sub-icon.is-right {
+    right: -16px;
+}
+[data-serialcursor-state="grab"] {
+    cursor: grab;
+}

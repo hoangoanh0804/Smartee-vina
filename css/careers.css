@@ -1,0 +1,105 @@
+/* ****************************************** */
+/* ****************BENEFITS**************** */
+/* ****************************************** */
+
+.benefits {
+    position: relative;
+    padding: 50px 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.benefits h3 {
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.benefits h3 span {
+    color: var(--seconday-color);
+}
+
+.benefits i {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.benefits .item {
+    font-size: 20px;
+    color: var(--seconday-color);
+    margin-top: 20px;
+}
+
+.benefits ul {
+    margin: 20px 0;
+}
+
+/* ****************************************** */
+/* ****************JOBS**************** */
+/* ****************************************** */
+
+.jobs {
+    margin: 50px 0;
+}
+
+.jobs .jobs-desc {
+    margin-top: 50px;
+}
+
+.jobs .jobs-desc:not(:last-child) {
+    border-bottom: 1px dashed var(--seconday-color);
+}
+
+.jobs .jobs-desc h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.jobs .jobs-desc h4 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.jobs .jobs-desc p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.jobs .jobs-desc .tech {
+    display: flex;
+}
+
+.jobs .jobs-desc .tech div {
+    padding: 6px 25px;
+    font-size: 18px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: #8a8a8a;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.jobs .jobs-desc i {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.jobs .jobs-desc li {
+    font-size: 18px;
+}
+
+.jobs .jobs-desc a {
+    padding: 10px 100px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: var(--white);
+    margin-top: 20px;
+    display: inline-block;
+}
