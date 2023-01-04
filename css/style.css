@@ -404,10 +404,6 @@ body {
     font-weight: 700;
 }
 
-.service .card-1:hover h3 {
-    color: var(--primary-color);
-}
-
 .service .card-1 p {
     font-weight: 300;
     font-size: 16px;
@@ -565,7 +561,7 @@ body {
 .project2 .menu ul li {
     width: 25%;
     margin: 0px 20px;
-    padding: 50px 30px;
+    padding: 25px 30px;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     display: flex;
@@ -600,12 +596,12 @@ body {
     opacity: 1;
 }
 
-.project2 .menu ul li a {
+.project2 .menu ul li div {
     position: relative;
     color: var(--primary-color);
 }
 
-.project2 .menu ul li a::after {
+.project2 .menu ul li div::after {
     content: "";
     display: block;
     position: absolute;
@@ -641,7 +637,7 @@ body {
 .project2 .content .box {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
-    padding: 50px;
+    padding: 30px;
     display: none;
     transition: 0.5s;
 }
@@ -866,7 +862,7 @@ body {
     z-index: 1;
     position: relative;
     display: inline-block;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-right: 10px;
 }
 
@@ -887,8 +883,9 @@ body {
     color: #c5e3ff;
 }
 .careers .content p {
-    font-size: 20px;
+    font-size: 18px;
     color: #e2f1ff;
+    margin-top: 10px;
 }
 .careers .content i {
     font-size: 30px;
@@ -1421,10 +1418,10 @@ body {
 }
 
 .team-member {
-    margin: 50px 0 0px;
+    margin: 80px 0px 0px;
     /* background: linear-gradient(to right, rgb(255 255 255 / 91%), rgb(255 255 255 / 90%)), url(../img/bg/bg-14.webp); */
     background-size: cover;
-    padding: 10px 0 30px;
+    padding: 20px 0px 70px;
     background-color: rgba(105, 150, 193, 0.06);
 }
 .team-member .slick-prev:before,
@@ -1656,7 +1653,7 @@ body {
     }
 
     .about {
-        margin: 30px 0px;
+        margin: 5px 0px;
     }
 
     .about h3 {
@@ -1775,8 +1772,23 @@ body {
     .project2 .content .box {
         padding: 10px;
     }
+    .project2 .menu ul li {
+        transition: 0.5s;
+    }
     .project2 .menu ul li::after {
         display: none;
+    }
+    .project2 .menu ul li div::after {
+        display: none;
+    }
+    .project2 .menu ul li.active {
+        background-color: var(--primary-color);
+    }
+    .project2 .menu ul li.active i {
+        color: #fff;
+    }
+    .project2 .menu ul li.active h3 {
+        color: #fff;
     }
     .project2 .menu ul {
         flex-wrap: wrap;
@@ -1789,14 +1801,14 @@ body {
         margin-top: 20px;
     }
     .about h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .company .card-1 {
         margin-top: 25px;
     }
     .about p {
         margin-bottom: 20px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .technology .button {
         margin-bottom: 25px;
@@ -1848,8 +1860,11 @@ body {
 /* ************575px************ */
 @media (max-width: 575px) {
     .about ul li {
-        width: 100%;
         margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .about i {
+        font-size: 20px;
     }
     .technology h3 span {
         font-size: 45px;
@@ -1863,6 +1878,104 @@ body {
     .choose-us .chooseus-desc p {
         font-size: 16px;
     }
+    .service .card-1 p {
+        display: none;
+    }
+    .service .card-1 h3 {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .service .card-1 {
+        margin-bottom: 20px;
+    }
+    .service .card-1 h3 {
+        margin: 10px 0 0;
+        font-weight: 500;
+    }
+    .service {
+        padding-top: 40px;
+    }
+    .service .left h5 {
+        font-size: 18px;
+    }
+    .service .left h2 {
+        font-size: 35px;
+    }
+    .technology {
+        padding: 35px 0 20px;
+    }
+    .technology .desc {
+        display: none;
+    }
+    .technology h3 {
+        font-size: 20px;
+    }
+    .technology h3 span {
+        font-size: 35px;
+        margin-top: 10px;
+        display: block;
+    }
+    .technology button {
+        padding: 5px 15px;
+    }
+    .technology .button {
+        margin-bottom: 5px;
+    }
+    .technology .card-technology .card p {
+        margin-top: 0;
+    }
+    .technology .card-technology .card i {
+        font-size: 35px;
+    }
+    .technology .card-technology .card {
+        margin: 15px 0px 10px;
+    }
+    .project2 .projects-top {
+        margin-bottom: 20px;
+    }
+    .project2 .projects-top h3 {
+        font-size: 35px;
+    }
+    .project2 .projects-top p {
+        margin: 10px auto 0;
+        font-size: 16px;
+    }
+    .project2 {
+        margin: 25px 0px;
+    }
+    .team-member {
+        margin: 40px 0px 0px;
+        padding: 20px 0px 25px;
+    }
+    .team-desc {
+        margin: 10px 0px;
+    }
+    .choose-us h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .choose-us p {
+        font-size: 16px;
+    }
+    .choose-us .chooseus-desc img {
+        width: 45px;
+        height: 45px;
+    }
+    .choose-us .chooseus-desc p {
+        font-size: 15px;
+    }
+    .partnerships .partnerships-bottom h5 {
+        font-size: 18px;
+    }
+    .partnerships .partnerships-bottom p {
+        font-size: 18px;
+    }
+    .contactus {
+        margin: 35px 0 15px;
+    }
+    .contactus iframe {
+        display: none;
+    }
 }
 
 /* ************479px************ */
@@ -1871,6 +1984,11 @@ body {
         width: 40%;
     }
     .careers .content ul li {
-        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .careers .content i {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }

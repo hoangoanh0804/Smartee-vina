@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     $(".project2 ul li").click(function () {
-        $id = $(this).find("a").attr("href");
+        $id = $(this).find("div").attr("dataId");
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
         $(".project2 .content").find($id).addClass("active");

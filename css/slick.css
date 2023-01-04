@@ -52,7 +52,7 @@
 }
 
 .slick-prev {
-    left: 0px;
+    left: 15px;
 }
 
 .slick-prev::before {
@@ -60,7 +60,7 @@
 }
 
 .slick-next {
-    right: 0;
+    right: 15px;
 }
 
 .slick-next::before {
