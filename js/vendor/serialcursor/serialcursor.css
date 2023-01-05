@@ -10,7 +10,7 @@
     margin: -20px 0 0 -21px;
     border: 1px solid var(--primary-color);
     opacity: 0.2;
-    transition: opacity 900ms;
+    transition: opacity 100ms;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -22,10 +22,10 @@
     transform: translate(-50%, -50%);
     background-color: var(--primary-color);
     border-radius: 100%;
-    transition: 200ms;
+    transition: 5ms;
 }
 #serialcursor.on-mousemove #serialcursor-inner {
-    opacity: 0.6;
+    opacity: 0.2;
 }
 #serialcursor.is-click #serialcursor-inner {
     opacity: 1;
