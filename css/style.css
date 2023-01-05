@@ -1613,6 +1613,10 @@ body {
         margin-top: 5px;
     }
 
+    .header .menu ul li::after {
+        bottom: 0;
+    }
+
     .header .menu ul li:last-child {
         border-bottom: none;
         margin-bottom: 0;
@@ -1633,6 +1637,13 @@ body {
         padding: 10px 0;
         font-size: 30px;
         margin: 0 10px;
+    }
+
+    .project2 .menu ul li div::after {
+        top: 15px;
+        left: 40px;
+        width: 40px;
+        height: 35px;
     }
 
     .project2 .menu ul li h3 {
@@ -1691,7 +1702,7 @@ body {
     }
 
     .service .card-1 h3 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
