@@ -167,13 +167,28 @@ body {
 }
 
 .header .icon.active div:first-child {
-    transform: rotate(45deg) translate(4px, 17px);
+    transform: rotate(45deg) translate(5px, 8px);
 }
 
 .header .icon.active div:last-child {
-    transform: rotate(-45deg) translate(-5px, -7px);
+    transform: rotate(-45deg) translate(3px, -6px);
 }
-
+.header .dropdown {
+    margin-left: 30px;
+}
+.header .dropdown button {
+    background-color: #fff;
+    color: #797979;
+    border: 1px solid #eee;
+}
+.header .dropdown button:active {
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #797979;
+}
+.header .dropdown-menu.show {
+    min-width: 75px;
+}
 /* ****************************************** */
 /* ****************HOMEPAGE- Company**************** */
 /* ****************************************** */
@@ -1774,9 +1789,11 @@ body {
     .header {
         margin: 15px 0px !important;
     }
-
-    .header .icon {
+    .header .dropdown {
         margin-left: auto;
+    }
+    .header .icon {
+        margin-left: 20px;
     }
 
     .header .phone {
@@ -1994,6 +2011,10 @@ body {
     }
     .careers .content {
         text-align: center;
+    }
+    .header .dropdown button {
+        padding: 2px 10px;
+        font-size: 14px;
     }
 }
 
