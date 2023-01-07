@@ -4,15 +4,6 @@ $(document).ready(function () {
         fade: true,
         dots: true,
     });
-    $(".clients .slick").slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        rows: 2,
-        dots: true,
-        arrows: false,
-        autoplay: true,
-    });
 
     if (window.innerWidth > 992) {
         new WOW().init();
@@ -35,6 +26,16 @@ $(document).ready(function () {
                 settings: { slidesToShow: 1, slidesToScroll: 1, dots: false, arrows: true },
             },
         ],
+    });
+
+    $(".clients .slick").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 800,
     });
 });
 

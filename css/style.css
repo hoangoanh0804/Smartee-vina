@@ -159,7 +159,9 @@ body {
     margin-bottom: 5px;
     transition: 0.5s;
 }
-
+.header .icon div:last-child {
+    margin-bottom: 0;
+}
 .header .icon.active div:nth-child(2) {
     opacity: 0;
 }
@@ -1987,6 +1989,12 @@ body {
     .contactus iframe {
         display: none;
     }
+    .container {
+        padding: 0 20px;
+    }
+    .careers .content {
+        text-align: center;
+    }
 }
 
 /* ************479px************ */
@@ -1996,7 +2004,7 @@ body {
     }
     .careers .content ul li {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .careers .content i {
         margin-right: 0;
