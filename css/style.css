@@ -28,8 +28,8 @@ input {
 
 body {
     font-family: Poppins, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--FS-15);
+    font-weight: var(--FW-400);
     scroll-behavior: smooth;
 }
 
@@ -44,12 +44,12 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--BR-50);
     transition: all 0.5s ease 0s;
 }
 
 .button-icon-1 i {
-    font-size: 20px;
+    font-size: var(--FS-20);
     color: var(--primary-color);
     transition: all 0.5s ease 0s;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .button-icon-1:hover i {
-    color: rgb(255, 255, 255);
+    color: var(--hover);
 }
 
 /* ****************************************** */
@@ -77,7 +77,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 99999;
-    background-color: #fff;
+    background-color: var(--white);
     width: 100%;
     left: 0;
     margin: 0;
@@ -96,8 +96,8 @@ body {
 .header .menu ul li {
     display: inline-block;
     margin-left: 40px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-300);
     cursor: pointer;
 }
 
@@ -132,20 +132,20 @@ body {
 }
 
 .header .phone i {
-    font-size: 25px;
+    font-size: var(--FS-24);
     color: var(--primary-color);
     margin-right: 15px;
 }
 
 .header .phone p {
     margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-300);
 }
 
 .header .phone p:last-child {
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: var(--FW-500);
 }
 
 .header .icon {
@@ -159,9 +159,11 @@ body {
     margin-bottom: 5px;
     transition: 0.5s;
 }
+
 .header .icon div:last-child {
     margin-bottom: 0;
 }
+
 .header .icon.active div:nth-child(2) {
     opacity: 0;
 }
@@ -173,22 +175,27 @@ body {
 .header .icon.active div:last-child {
     transform: rotate(-45deg) translate(3px, -6px);
 }
+
 .header .dropdown {
     margin-left: 30px;
 }
+
 .header .dropdown button {
-    background-color: #fff;
-    color: #797979;
+    background-color: var(--white);
+    color: var(--btn-bg);
     border: 1px solid #eee;
 }
+
 .header .dropdown button:active {
     background-color: transparent;
     border: 1px solid #eee;
-    color: #797979;
+    color: var(--btn-bg);
 }
+
 .header .dropdown-menu.show {
     min-width: 75px;
 }
+
 /* ****************************************** */
 /* ****************HOMEPAGE- Company**************** */
 /* ****************************************** */
@@ -206,26 +213,26 @@ body {
 
 .company .card-1 .icon i {
     color: var(--primary-color);
-    font-size: 45px;
+    font-size: var(--FS-46);
     display: inline-block;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .company .card-1 i {
-    font-size: 20px;
+    font-size: var(--FS-20);
     margin-right: 15px;
     color: var(--primary-color);
 }
 
 .company .card-1 h3 {
-    font-size: 24px;
+    font-size: var(--FS-24);
     color: var(--seconday-color);
-    font-weight: 700;
+    font-weight: var(--FW-700);
 }
 
 .company .card-1 p {
-    font-size: 16px;
+    font-size: var(--FS-16);
     color: var(--secondary-color);
 }
 
@@ -266,8 +273,8 @@ body {
     bottom: -20px;
     background-color: var(--primary-color);
     padding: 10px 20px;
-    color: #fff;
-    font-weight: 600;
+    color: var(--white);
+    font-weight: var(--FW-600);
 }
 
 .about .year::before {
@@ -295,7 +302,7 @@ body {
     align-items: center;
     width: calc(50% - 5px);
     margin-bottom: 30px;
-    font-size: 16px;
+    font-size: var(--FS-16);
     color: var(--seconday-color);
 }
 
@@ -303,7 +310,7 @@ body {
     background-color: var(--primary-color);
     border-radius: 2px;
     position: relative;
-    font-size: 8px;
+    font-size: var(--FS-8);
     width: 2em;
     height: 2em;
     display: inline-block;
@@ -322,8 +329,8 @@ body {
 }
 
 .about h3 {
-    font-size: 46px;
-    font-weight: 600;
+    font-size: var(--FS-46);
+    font-weight: var(--FW-600);
     color: var(--seconday-color);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -334,8 +341,8 @@ body {
 }
 
 .about p {
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: var(--FW-300);
+    font-size: var(--FS-18);
     color: var(--seconday-color);
 }
 
@@ -353,7 +360,7 @@ body {
     content: "";
     display: block;
     /* background-color: rgb(240, 240, 240); */
-    background-color: #6996c10f;
+    background-color: var(--bg-color2);
     width: 100%;
     height: 300px;
     position: absolute;
@@ -373,15 +380,15 @@ body {
 }
 
 .service .left h5 {
-    font-size: 20px;
+    font-size: var(--FS-20);
     color: var(--seconday-color);
-    font-weight: 500;
+    font-weight: var(--FW-500);
 }
 
 .service .left h2 {
-    font-size: 42px;
+    font-size: var(--FS-42);
     color: var(--primary-color);
-    font-weight: 700;
+    font-weight: var(--FW-700);
 }
 
 .service .right {
@@ -389,8 +396,8 @@ body {
 }
 
 .service .right p {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-300);
     color: var(--seconday-color);
     margin-left: 80px;
 }
@@ -400,30 +407,31 @@ body {
     box-shadow: rgba(147, 147, 147, 0.25) 0px 0px 10px;
     background-color: var(--white);
     text-align: center;
-    border-radius: 20px;
+    border-radius: var(--BR-lg);
     display: block;
     margin-bottom: 30px;
 }
 
 .service .card-1 .icon i {
     color: var(--primary-color);
-    font-size: 65px;
+    font-size: var(--FS-65);
     display: inline-block;
     text-align: center;
 }
 
 .service .card-1 h3 {
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: var(--FW-500);
+    font-size: var(--FS-24);
+
     margin: 20px 0;
     transition: all 0.5s ease 0s;
     color: var(--seconday-color);
-    font-weight: 700;
+    font-weight: var(--FW-700);
 }
 
 .service .card-1 p {
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: var(--FW-300);
+    font-size: var(--FS-16);
     color: var(--seconday-color);
 }
 
@@ -457,27 +465,27 @@ body {
 
 .technology h5 {
     color: var(--primary-color);
-    font-size: 20px;
-    font-weight: 300;
+    font-size: var(--FS-20);
+    font-weight: var(--FW-300);
 }
 
 .technology h3 {
-    font-size: 32px;
-    font-weight: 300;
+    font-size: var(--FS-32);
+    font-weight: var(--FW-300);
     color: var(--white);
     width: 70%;
     margin-top: 25px;
 }
 
 .technology h3 span {
-    font-size: 48px;
-    font-weight: 800;
+    font-size: var(--FS-48);
+    font-weight: var(--FW-800);
     color: var(--white);
 }
 
 .technology p {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-300);
     color: var(--seconday-color);
 }
 
@@ -487,11 +495,11 @@ body {
 
 .technology button {
     padding: 10px 40px;
-    border-radius: 5px;
+    border-radius: var(--BR-sm);
     background: rgba(255, 255, 255, 0.18);
     border: 1px solid var(--white);
     color: var(--white);
-    font-size: 16px;
+    font-size: var(--FS-16);
     margin-bottom: 10px;
     margin-right: 20px;
     margin-top: 15px;
@@ -519,13 +527,13 @@ body {
 }
 
 .technology .card-technology .card i {
-    font-size: 80px;
+    font-size: var(--FS-80);
     color: var(--white);
     margin: 15px 0px;
 }
 
 .technology .card-technology .card p {
-    font-size: 20px;
+    font-size: var(--FS-20);
     color: var(--white);
     margin-top: 15px;
 }
@@ -544,8 +552,8 @@ body {
 }
 
 .project2 .projects-top h3 {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: var(--FS-48);
+    font-weight: var(--FW-600);
     color: var(--seconday-color);
 }
 
@@ -554,8 +562,8 @@ body {
 }
 
 .project2 .projects-top p {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: var(--FS-20);
+    font-weight: var(--FW-300);
     color: var(--seconday-color);
     width: 50%;
     margin: 20px auto 0;
@@ -580,11 +588,11 @@ body {
     margin: 0px 20px;
     padding: 25px 30px;
     border: 1px solid var(--primary-color);
-    border-radius: 10px;
+    border-radius: var(--BR-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 55px;
+    font-size: var(--FS-55);
     text-align: center;
     background-color: rgb(249 249 249);
     position: relative;
@@ -632,7 +640,7 @@ body {
 }
 
 .project2 .menu ul li h3 {
-    font-size: 20px;
+    font-size: var(--FS-20);
     text-align: center;
     margin-top: 10px;
     color: rgb(51, 51, 51);
@@ -653,7 +661,7 @@ body {
 
 .project2 .content .box {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
+    border-radius: var(--BR-md);
     padding: 30px;
     display: none;
     transition: 0.5s;
@@ -664,13 +672,13 @@ body {
 }
 
 .project2 .content .box h3 {
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: var(--FW-600);
+    font-size: var(--FS-24);
     margin-bottom: 30px;
 }
 
 .project2 .content .box p {
-    font-weight: 300;
+    font-weight: var(--FW-300);
 }
 
 .project2 .content .box a {
@@ -678,9 +686,9 @@ body {
     background-color: var(--primary-color);
     padding: 5px 20px;
     margin-top: 30px;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 16px;
+    color: var(--white);
+    border-radius: var(--BR-sm);
+    font-size: var(--FS-16);
 }
 
 /* ****************************************** */
@@ -723,15 +731,15 @@ body {
 
 .business-solutions .solutions-title p {
     color: var(--white);
-    font-size: 18px;
+    font-size: var(--FS-18);
 
     margin-top: 20px;
-    font-weight: 300;
+    font-weight: var(--FW-300);
 }
 
 .business-solutions .solutions-title span {
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: var(--FW-500);
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -742,7 +750,7 @@ body {
     color: var(--white);
     background-color: var(--btn-color);
     transition: all 0.5s ease 0s;
-    border-radius: 10px;
+    border-radius: var(--BR-md);
     z-index: 1;
     position: relative;
     display: inline-block;
@@ -761,22 +769,22 @@ body {
 
     width: calc(50% - 5px);
     margin-bottom: 20px;
-    font-size: 16px;
-    color: #fff;
+    font-size: var(--FS-16);
+    color: var(--white);
 }
 
 .business-solutions i {
-    font-size: 30px;
+    font-size: var(--FS-30);
     color: var(--primary-color);
     margin-right: 20px;
 }
 
 .business-solutions h6 {
     color: var(--white);
-    font-size: 40px;
+    font-size: var(--FS-40);
 
     margin-top: 20px;
-    font-weight: 300;
+    font-weight: var(--FW-300);
 }
 
 .business-solutions .solutions-title .contact-us:hover {
@@ -797,9 +805,9 @@ body {
 }
 
 .partnerships .partnerships-top h5 {
-    font-size: 48px;
+    font-size: var(--FS-48);
     color: var(--seconday-color);
-    font-weight: 700;
+    font-weight: var(--FW-700);
     margin-bottom: 20px;
 }
 
@@ -808,15 +816,15 @@ body {
 }
 
 .partnerships .partnerships-top p {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-300);
     color: var(--seconday-color);
     line-height: 35px;
 }
 
 .partnerships .partnerships-bottom {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: var(--FS-32);
+    font-weight: var(--FW-600);
     color: var(--white);
     position: relative;
     text-align: center;
@@ -824,15 +832,15 @@ body {
 }
 
 .partnerships .partnerships-bottom h5 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: var(--FS-32);
+    font-weight: var(--FW-600);
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 20px;
 }
 
 .partnerships .partnerships-bottom p {
-    font-size: 20px;
+    font-size: var(--FS-20);
     color: var(--seconday-color);
 }
 
@@ -862,7 +870,7 @@ body {
 }
 .careers .content h6 {
     color: var(--white);
-    font-size: 38px;
+    font-size: var(--FS-38);
 }
 
 .careers .content h6 span {
@@ -875,7 +883,7 @@ body {
     color: var(--white);
     background-color: var(--btn-color);
     transition: all 0.5s ease 0s;
-    border-radius: 10px;
+    border-radius: var(--BR-md);
     z-index: 1;
     position: relative;
     display: inline-block;
@@ -896,16 +904,18 @@ body {
     align-items: center;
     width: calc(50% - 5px);
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: var(--FS-18);
     color: #c5e3ff;
 }
+
 .careers .content p {
-    font-size: 18px;
+    font-size: var(--FS-18);
     color: #e2f1ff;
     margin-top: 10px;
 }
+
 .careers .content i {
-    font-size: 30px;
+    font-size: var(--FS-30);
     color: var(--primary-color);
     margin-right: 20px;
     border: 1px solid #4e4975;
@@ -928,22 +938,22 @@ body {
 }
 
 .contactus h6 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
+    font-size: var(--FS-16);
+    font-weight: var(--FW-400);
+    color: var(--black);
     margin-bottom: 10px;
 }
 
 .contactus h3 {
-    font-size: 26px;
-    font-weight: 600;
+    font-size: var(--FS-26);
+    font-weight: var(--FW-600);
     color: var(--primary-color);
     margin-bottom: 30px;
 }
 
 .contactus .form-input {
     width: 90%;
-    border-radius: 10px;
+    border-radius: var(--BR-md);
     padding: 20px;
     background-color: #f5f5f5;
     border: none;
@@ -955,7 +965,7 @@ body {
     background-color: var(--primary-color);
     display: inline-block;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: var(--BR-md);
     text-align: center;
     color: var(--white);
     margin-top: 10px;
@@ -975,7 +985,7 @@ body {
 
 .contactus .contactus-infor li i {
     color: var(--primary-color);
-    font-size: 24px;
+    font-size: var(--FS-24);
 }
 
 /* ****************************************** */
@@ -1002,14 +1012,14 @@ body {
 }
 
 .footer .footer-top .desc-1 {
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: var(--FW-300);
+    font-size: var(--FS-16);
     color: rgba(217, 217, 217, 0.5);
     margin-top: 20px;
 }
 
 .footer .footer-top .social i {
-    font-size: 20px;
+    font-size: var(--FS-20);
     color: var(--primary-color);
     transition: all 0.5s ease 0s;
 }
@@ -1017,7 +1027,7 @@ body {
 .footer .footer-top .social a {
     border: 1px solid var(--primary-color);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: var(--BR-sm);
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -1032,18 +1042,18 @@ body {
 }
 
 .footer .footer-top .social a:hover i {
-    color: rgb(255, 255, 255);
+    color: var(--hover);
 }
 
 .footer .footer-title {
-    font-size: 20px;
+    font-size: var(--FS-20);
     margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+    color: var(--hover);
 }
 
 .footer .footer-service li a {
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: var(--FW-300);
+    font-size: var(--FS-16);
     color: rgba(217, 217, 217, 0.5);
     transition: all 0.5s ease 0s;
 }
@@ -1069,12 +1079,12 @@ body {
 
 .footer .footer-infor li i {
     color: var(--primary-color);
-    font-size: 24px;
+    font-size: var(--FS-24);
 }
 
 .footer .desc-2 {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: var(--FS-16);
+    font-weight: var(--FW-300);
 }
 
 .footer input {
@@ -1094,14 +1104,14 @@ body {
     right: 3px;
     background-color: var(--primary-color);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: var(--BR-lg);
     width: 40px;
     height: 40px;
     border: none;
 }
 
 .footer .footer-form button i {
-    color: rgb(255, 255, 255);
+    color: var(--hover);
 }
 
 .footer .footer-bottom {
@@ -1119,14 +1129,14 @@ body {
 
 .ft-backtop {
     opacity: 0;
-    font-size: 20px;
+    font-size: var(--FS-20);
     border: 1px solid #e6e6e6;
     background-color: rgb(220 220 220 / 50%);
     z-index: 99;
     position: fixed;
     padding: 10px;
     right: 21px;
-    border-radius: 5px;
+    border-radius: var(--BR-sm);
     width: 40px;
     height: 40px;
     display: flex;
@@ -1139,7 +1149,7 @@ body {
 }
 
 .ft-backtop i {
-    color: #000;
+    color: var(--black);
 }
 
 .ft-backtop.is-show {
@@ -1178,8 +1188,8 @@ body {
 }
 
 .banner-bottom .banner-title h3 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: var(--FS-30);
+    font-weight: var(--FW-700);
     color: var(--seconday-color);
 }
 
@@ -1202,15 +1212,15 @@ body {
 
 .about-list .list .icon {
     background-color: var(--primary-color);
-    color: #fff;
-    font-size: 25px;
+    color: var(--white);
+    font-size: var(--FS-24);
     width: 70px;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    border: 5px solid #fff;
+    border-radius: var(--BR-50);
+    border: 5px solid var(--white);
     margin: 0 auto -10px;
     z-index: 1;
     position: relative;
@@ -1222,14 +1232,14 @@ body {
 
 .about-list .list .title {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding: 10px 0 8px;
     position: relative;
 }
 
 .about-list .list .title h3 {
-    font-size: 24px;
+    font-size: var(--FS-24);
     margin-top: 5px;
     margin-left: 10px;
 }
@@ -1257,20 +1267,20 @@ body {
 .about-list .list .title::before {
     right: unset;
     left: 0;
-    border-left: 30px solid #fff;
+    border-left: 30px solid var(--white);
 }
 
 .about-list .list .number {
     background-color: var(--primary-color);
     display: inline-block;
-    font-size: 30px;
+    font-size: var(--FS-30);
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    border-radius: 50%;
+    color: var(--white);
+    border-radius: var(--BR-50);
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -1290,8 +1300,8 @@ body {
 
 .about-list .list .text h4 {
     color: var(--primary-color);
-    font-size: 25px;
-    font-weight: 600;
+    font-size: var(--FS-24);
+    font-weight: var(--FW-600);
 }
 
 .about-list .list .item:nth-child(even) .text h4 {
@@ -1314,10 +1324,10 @@ body {
 }
 
 .choose-us h3 {
-    font-size: 40px;
+    font-size: var(--FS-42);
     color: var(--seconday-color);
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: var(--FW-600);
 }
 
 .choose-us h3 span {
@@ -1325,8 +1335,8 @@ body {
 }
 
 .choose-us p {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: var(--FS-20);
+    font-weight: var(--FW-300);
     color: var(--seconday-color);
 }
 
@@ -1345,8 +1355,8 @@ body {
 }
 
 .choose-us .chooseus-desc h6 {
-    font-size: 22px;
-    font-weight: 500;
+    font-size: var(--FS-24);
+    font-weight: var(--FW-500);
     color: var(--seconday-color);
     margin-top: 10px;
 
@@ -1355,8 +1365,8 @@ body {
 }
 
 .choose-us .chooseus-desc p {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-300);
 }
 
 /* .about {
@@ -1372,7 +1382,7 @@ body {
 } */
 
 .about i {
-    font-size: 30px;
+    font-size: var(--FS-30);
     color: var(--primary-color);
     margin-right: 15px;
 }
@@ -1394,7 +1404,7 @@ body {
 }
 
 .about-list h2 {
-    font-size: 24px;
+    font-size: var(--FS-24);
     color: var(--seconday-color);
 
     text-align: center;
@@ -1406,7 +1416,7 @@ body {
 }
 
 .about-list p {
-    font-size: 20px;
+    font-size: var(--FS-20);
     color: var(--seconday-color);
     text-align: center;
     margin-bottom: 20px;
@@ -1422,8 +1432,8 @@ body {
 }
 
 .team .team-tilte {
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: var(--FW-700);
+    font-size: var(--FS-26);
     text-align: center;
     color: var(--seconday-color);
     margin-top: 35px;
@@ -1452,13 +1462,13 @@ body {
 
 .team-member .team-desc h5 {
     color: var(--primary-color);
-    font-size: 20px;
-    font-weight: 400;
+    font-size: var(--FS-20);
+    font-weight: var(--FW-400);
 }
 
 .team-member .team-desc h3 {
-    font-size: 30px;
-    font-weight: 800;
+    font-size: var(--FS-30);
+    font-weight: var(--FW-800);
     color: var(--seconday-color);
     width: 70%;
     margin-top: 20px;
@@ -1469,13 +1479,13 @@ body {
 }
 
 .team-member p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: var(--FS-18);
+    font-weight: var(--FW-400);
     color: var(--seconday-color);
 }
 
 .team-img .card-member {
-    border-radius: 5px;
+    border-radius: var(--BR-sm);
     padding-bottom: 15px;
 }
 
@@ -1486,20 +1496,20 @@ body {
 }
 
 .team-img .card-member .thumb img {
-    border-radius: 50%;
+    border-radius: var(--BR-50);
 }
 
 .team-img .card-member h3 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: var(--FS-20);
+    font-weight: var(--FW-500);
     color: var(--seconday-color);
     text-align: center;
     margin-top: 15px;
 }
 
 .team-img .card-member h6 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--FS-16);
+    font-weight: var(--FW-500);
     color: var(--primary-color);
     text-align: center;
 }
@@ -1522,11 +1532,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--BR-50);
     transition: 0.5s;
     z-index: 999;
-    color: #fff;
+    color: var(--white);
 }
+
 .c-button-3::before,
 .c-button-3::after {
     content: "";
@@ -1537,7 +1548,7 @@ body {
     height: 100%;
     background-color: var(--primary-color);
     animation: ripple 3s infinite;
-    border-radius: 50%;
+    border-radius: var(--BR-50);
     z-index: -1;
 }
 
@@ -1580,8 +1591,8 @@ body {
 @media (max-width: 1400px) {
     .header .menu ul li {
         margin-left: 35px;
-        font-size: 16px;
-        font-weight: 300;
+        font-size: var(--FS-16);
+        font-weight: var(--FW-300);
     }
     .header .logo img {
         width: 175px;
@@ -1598,7 +1609,7 @@ body {
         margin-left: 15px;
     }
     .header .phone p {
-        font-size: 15px;
+        font-size: var(--FS-15);
     }
 }
 
@@ -1615,7 +1626,7 @@ body {
         right: -100%;
         top: 55px;
         box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-        background-color: #fff;
+        background-color: var(--white);
 
         width: 200px;
         transition: 0.5s;
@@ -1640,7 +1651,7 @@ body {
     }
 
     .header .menu ul li a {
-        font-size: 18px;
+        font-size: var(--FS-18);
         padding: 10px 20px;
         display: block;
     }
@@ -1652,7 +1663,7 @@ body {
 
     .project2 .menu ul li {
         padding: 10px 0;
-        font-size: 30px;
+        font-size: var(--FS-30);
         margin: 0 10px;
     }
 
@@ -1664,7 +1675,7 @@ body {
     }
 
     .project2 .menu ul li h3 {
-        font-size: 14px;
+        font-size: var(--FS-14);
     }
 
     .project2 .menu ul li a::after {
@@ -1677,7 +1688,7 @@ body {
     }
 
     .company .card-1 h3 {
-        font-size: 20px;
+        font-size: var(--FS-20);
     }
 
     .about {
@@ -1686,7 +1697,7 @@ body {
 
     .about h3 {
         /* margin-top: 75px; */
-        font-size: 40px;
+        font-size: var(--FS-40);
         margin-top: 0;
     }
 
@@ -1719,12 +1730,12 @@ body {
     }
 
     .service .card-1 h3 {
-        font-size: 16px;
+        font-size: var(--FS-16);
         margin-bottom: 10px;
     }
 
     .service .card-1 .icon i {
-        font-size: 40px;
+        font-size: var(--FS-42);
     }
 
     .technology {
@@ -1737,12 +1748,12 @@ body {
     }
 
     .project2 .projects-top h3 {
-        font-size: 40px;
+        font-size: var(--FS-40);
     }
 
     .project2 .projects-top p {
         width: 100%;
-        font-size: 18px;
+        font-size: var(--FS-18);
     }
 
     .project2 .projects-top {
@@ -1759,7 +1770,7 @@ body {
     }
 
     .team-member p {
-        font-size: 16px;
+        font-size: var(--FS-16);
     }
 
     .team-desc {
@@ -1789,9 +1800,11 @@ body {
     .header {
         margin: 15px 0px !important;
     }
+
     .header .dropdown {
         margin-left: auto;
     }
+
     .header .icon {
         margin-left: 20px;
     }
@@ -1799,89 +1812,115 @@ body {
     .header .phone {
         display: none;
     }
+
     .project2 .content .box {
         padding: 10px;
     }
+
     .project2 .menu ul li {
         transition: 0.5s;
     }
+
     .project2 .menu ul li::after {
         display: none;
     }
+
     .project2 .menu ul li div::after {
         display: none;
     }
+
     .project2 .menu ul li.active {
         background-color: var(--primary-color);
     }
+
     .project2 .menu ul li.active i {
-        color: #fff;
+        color: var(--white);
     }
+
     .project2 .menu ul li.active h3 {
-        color: #fff;
+        color: var(--white);
     }
+
     .project2 .menu ul {
         flex-wrap: wrap;
     }
+
     .project2 .menu ul li {
         width: 45%;
         margin: 10px !important;
     }
+
     .project2 .content {
         margin-top: 20px;
     }
+
     .about h3 {
-        font-size: 25px;
+        font-size: var(--FS-24);
     }
+
     .company .card-1 {
         margin-top: 25px;
     }
+
     .about p {
         margin-bottom: 20px;
-        font-size: 15px;
+        font-size: var(--FS-15);
     }
+
     .technology .button {
         margin-bottom: 25px;
     }
+
     .technology h3 {
         width: 100%;
     }
+
     .technology button {
         padding: 5px 30px;
-        font-size: 14px;
+        font-size: var(--FS-14);
         margin-right: 10px;
         margin-top: 5px;
     }
+
     .technology .card-technology .card i {
-        font-size: 50px;
+        font-size: var(--FS-50);
     }
+
     .choose-us h3 {
-        font-size: 30px;
+        font-size: var(--FS-30);
     }
+
     .choose-us p {
-        font-size: 17px;
+        font-size: var(--FS-16);
     }
+
     .choose-us {
         padding-bottom: 10px;
         margin-top: 25px;
     }
+
     .partnerships .partnerships-bottom h5 {
-        font-size: 25px;
+        font-size: var(--FS-24);
     }
+
     .contactus button {
         margin-bottom: 30px;
         width: 100% !important;
     }
+
     .contactus .form-input {
         width: 100%;
     }
+
     .footer .footer-title {
         margin-top: 20px;
     }
+
     .footer .footer-bottom {
         flex-direction: column;
         text-align: center;
     }
+
     .footer .footer-top {
         padding: 15px 0px 30px;
     }
@@ -1891,130 +1930,167 @@ body {
 @media (max-width: 575px) {
     .about ul li {
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: var(--FS-14);
     }
+
     .about i {
-        font-size: 20px;
+        font-size: var(--FS-20);
     }
+
     .technology h3 span {
-        font-size: 45px;
+        font-size: var(--FS-46);
     }
+
     .technology h3 {
-        font-size: 25px;
+        font-size: var(--FS-24);
     }
+
     .choose-us .chooseus-desc h6 {
-        font-size: 16px;
+        font-size: var(--FS-16);
     }
+
     .choose-us .chooseus-desc p {
-        font-size: 16px;
+        font-size: var(--FS-16);
     }
+
     .service .card-1 p {
         display: none;
     }
-    .service .card-1 h3 {
-        font-size: 17px;
+
+    /* .service .card-1 h3 {
+        font-size: var(--FS-18);
         margin-bottom: 5px;
-    }
+    } */
+
     .service .card-1 {
         margin-bottom: 20px;
     }
+
     .service .card-1 h3 {
         margin: 10px 0 0;
-        font-weight: 500;
+        font-weight: var(--FW-500);
     }
+
     .service {
         padding-top: 40px;
     }
+
     .service .left h5 {
-        font-size: 18px;
+        font-size: var(--FS-18);
     }
+
     .service .left h2 {
-        font-size: 35px;
+        font-size: var(--FS-34);
     }
+
     .technology {
         padding: 35px 0 20px;
     }
+
     .technology .desc {
         display: none;
     }
+
     .technology h3 {
-        font-size: 20px;
+        font-size: var(--FS-20);
     }
+
     .technology h3 span {
-        font-size: 35px;
+        font-size: var(--FS-34);
         margin-top: 10px;
         display: block;
     }
+
     .technology button {
         padding: 5px 15px;
     }
+
     .technology .button {
         margin-bottom: 5px;
     }
     .technology .card-technology .card p {
         margin-top: 0;
     }
+
     .technology .card-technology .card i {
         font-size: 35px;
     }
+
     .technology .card-technology .card {
         margin: 15px 0px 10px;
     }
+
     .project2 .projects-top {
         margin-bottom: 20px;
     }
+
     .project2 .projects-top h3 {
-        font-size: 35px;
+        font-size: var(--FS-34);
     }
+
     .project2 .projects-top p {
         margin: 10px auto 0;
-        font-size: 16px;
+        font-size: var(--FS-16);
     }
+
     .project2 {
         margin: 25px 0px;
     }
+
     .team-member {
         margin: 40px 0px 0px;
         padding: 20px 0px 25px;
     }
+
     .team-desc {
         margin: 10px 0px;
     }
+
     .choose-us h3 {
-        font-size: 25px;
+        font-size: var(--FS-24);
         margin-bottom: 15px;
     }
+
     .choose-us p {
-        font-size: 16px;
+        font-size: var(--FS-16);
     }
+
     .choose-us .chooseus-desc img {
         width: 45px;
         height: 45px;
     }
+
     .choose-us .chooseus-desc p {
-        font-size: 15px;
+        font-size: var(--FS-15);
     }
+
     .partnerships .partnerships-bottom h5 {
-        font-size: 18px;
+        font-size: var(--FS-18);
     }
+
     .partnerships .partnerships-bottom p {
-        font-size: 18px;
+        font-size: var(--FS-18);
     }
+
     .contactus {
         margin: 35px 0 15px;
     }
+
     .contactus iframe {
         display: none;
     }
+
     .container {
         padding: 0 20px;
     }
+
     .careers .content {
         text-align: center;
     }
+
     .header .dropdown button {
         padding: 2px 10px;
-        font-size: 14px;
+        font-size: var(--FS-14);
     }
 }
 
@@ -2023,10 +2099,12 @@ body {
     .project2 .menu ul li {
         width: 40%;
     }
+
     .careers .content ul li {
         flex-direction: column;
         align-items: center;
     }
+
     .careers .content i {
         margin-right: 0;
         margin-bottom: 10px;

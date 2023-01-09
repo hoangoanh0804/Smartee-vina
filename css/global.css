@@ -1,15 +1,51 @@
 :root {
+    /* COLOR */
     --primary-color: #6996c1;
     --seconday-color: #6e6f72;
     --btn-color: #e46161;
+    --btn-bg: #797979;
     --bg-color: #fbfcfd;
+    --bg-color2: #6996c10f;
     --white: #fff;
     --bg-gray: #f0f0f0;
     --bg-blue: #211e3b;
-}
+    --black: #000;
+    --hover: rgb(255, 255, 255);
 
-/* @media (min-width: 1400px){
-    .container{
-        max-width: 1240px;
-    }
-} */
+    /* FONT-SIZE*/
+    --FS-8: 8px;
+    --FS-12: 12px;
+    --FS-14: 14px;
+    --FS-15: 15px;
+    --FS-16: 16px;
+    --FS-18: 18px;
+    --FS-20: 20px;
+    --FS-24: 24px;
+    --FS-26: 26px;
+    --FS-30: 30px;
+    --FS-32: 32px;
+    --FS-34: 34px;
+    --FS-38: 38px;
+    --FS-42: 42px;
+    --FS-45: 45px;
+    --FS-46: 46px;
+    --FS-48: 48px;
+    --FS-50: 50px;
+    --FS-55: 55px;
+    --FS-65: 65px;
+    --FS-80: 80px;
+
+    /* FONT-WEIGHT*/
+    --FW-300: 300;
+    --FW-400: 400;
+    --FW-500: 500;
+    --FW-600: 600;
+    --FW-700: 700;
+    --FW-800: 800;
+
+    /* BORDER-RADIUS*/
+    --BR-sm: 5px;
+    --BR-md: 10px;
+    --BR-lg: 20px;
+    --BR-50: 50%;
+}
